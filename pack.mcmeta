@@ -1,6 +1,6 @@
 {
     "pack": {
         "pack_format": 80,
-        "description": "Respawn Utils - datapack with custom block tags & predicates for respawn logic"
+        "description": "Respawn Utils - Minecraft datapack that provides visuals and scoreboard values for player respawn points and whether they are valid or not"
     }
 }
