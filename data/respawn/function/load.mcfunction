@@ -1,3 +1,6 @@
+# Set the current version
+data modify storage respawn:data Version set value "1.0"
+
 scoreboard objectives add respawn.utils dummy
 scoreboard objectives add respawn.exists dummy "Has Respawn Pos"
 scoreboard objectives add respawn.valid dummy "Respawn is Valid"
