@@ -1,0 +1,2 @@
+execute unless entity @n[type=block_display,tag=respawn_visual,distance=..0.25] run summon block_display ~-0.165 ~ ~-0.165 {brightness: {block: 15,sky: 15}, Glowing: true, transformation: {left_rotation: [0,0,0,1], right_rotation: [0,0,0,1], scale: [0.33, 0.33, 0.33], translation: [0,0,0]}, Tags: ["respawn_visual"]}
+execute as @n[type=block_display,tag=respawn_visual,tag=!respawn_processed,distance=..0.25] run function respawn:visuals/update_respawn_valid

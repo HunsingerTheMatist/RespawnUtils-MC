@@ -1,0 +1,39 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "blocks": "#slabs"
+                        }
+                    }
+                },
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "type": "bottom"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "snow",
+                    "state": {
+                        "layers": "5"
+                    }
+                }
+            }
+        }
+    ]
+}

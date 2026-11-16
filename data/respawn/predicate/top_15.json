@@ -1,0 +1,81 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "blocks": "bell"
+                        }
+                    }
+                },
+                {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "location_check",
+                            "predicate": {
+                                "block": {
+                                    "state": {
+                                        "attachment": "double_wall"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": "location_check",
+                            "predicate": {
+                                "block": {
+                                    "state": {
+                                        "attachment": "single_wall"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "blocks": "big_dripleaf"
+                        }
+                    }
+                },
+                {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "location_check",
+                            "predicate": {
+                                "block": {
+                                    "state": {
+                                        "tilt": "none"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": "location_check",
+                            "predicate": {
+                                "block": {
+                                    "state": {
+                                        "tilt": "unstable"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

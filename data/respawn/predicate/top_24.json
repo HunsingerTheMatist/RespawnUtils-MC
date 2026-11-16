@@ -1,0 +1,16 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#fence_gates",
+                    "state": {
+                        "open": "false"
+                    }
+                }
+            }
+        }
+    ]
+}

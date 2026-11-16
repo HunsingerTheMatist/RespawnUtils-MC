@@ -1,0 +1,149 @@
+{
+    "values": {
+        "Amethyst Cluster": {
+            "facing: up": {
+                "Amethyst Cluster": 7,
+                "Large Amethyst Bud": 5,
+                "Medium Amethyst Bud": 4,
+                "Small Amethyst Bud": 3
+            },
+            "facing: east<br>facing: north<br>facing: south<br>facing: west": {
+                "Amethyst Cluster": 13,
+                "Large Amethyst Bud": 13,
+                "Medium Amethyst Bud": 13,
+                "Small Amethyst Bud": 12
+            }
+        },
+        "Anvil": 16,
+        "Azalea": 16,
+        "Bamboo": {
+            "Bamboo": 16,
+            "Bamboo Shoot": 0
+        },
+        "Beds": 9,
+        "Bell": {
+            "attachment: double_wall<br>attachment: single_wall": 15,
+            "attachment: floor": 16
+        },
+        "Big Dripleaf": {
+            "Big Dripleaf": {
+                "tilt: full": 0,
+                "tilt: none<br>tilt: unstable": 15,
+                "tilt: partial": 13
+            },
+            "Big Dripleaf Stem": 0
+        },
+        "Brewing Stand": 14,
+        "Cactus": 15,
+        "Cake": {
+            "Cake": 8,
+            "Cake with Black Candle<br>Cake with Blue Candle<br>Cake with Brown Candle<br>Cake with Candle<br>Cake with Cyan Candle<br>Cake with Gray Candle<br>Cake with Green Candle<br>Cake with Light Blue Candle<br>Cake with Light Gray Candle<br>Cake with Lime Candle<br>Cake with Magenta Candle<br>Cake with Orange Candle<br>Cake with Pink Candle<br>Cake with Purple Candle<br>Cake with Red Candle<br>Cake with White Candle<br>Cake with Yellow Candle": 14
+        },
+        "Calibrated Sculk Sensor": 8,
+        "Campfire": 7,
+        "Candles": 6,
+        "Carpets": 1,
+        "Cauldron": 16,
+        "Chain": {
+            "axis: x<br>axis: z": 9.5,
+            "axis: y": 16
+        },
+        "Chest": 14,
+        "Chorus Plant": 13,
+        "Cocoa": 12,
+        "Composter": 16,
+        "Conduit": 11,
+        "Daylight Detector": 6,
+        "Dirt Path": 15,
+        "Doors": 16,
+        "Dragon Egg": 16,
+        "Dried Ghast": 10,
+        "Enchanting Table": 12,
+        "End Portal Frame": {
+            "eye: false": 13,
+            "eye: true": 16
+        },
+        "End Rod": {
+            "facing: down<br>facing: up": 16,
+            "facing: east<br>facing: north<br>facing: south<br>facing: west": 10
+        },
+        "Ender Chest": 14,
+        "Farmland": 15,
+        "Fence Gates": {
+            "open: false": 24,
+            "open: true": 0
+        },
+        "Fences": 24,
+        "Flower Pot": 6,
+        "Glass Pane": 16,
+        "Grindstone": {
+            "face: ceiling<br>face: floor": 16,
+            "face: wall": 14
+        },
+        "Hanging Signs": {
+            "Acacia Hanging Sign<br>Bamboo Hanging Sign<br>Birch Hanging Sign<br>Cherry Hanging Sign<br>Crimson Hanging Sign<br>Dark Oak Hanging Sign<br>Jungle Hanging Sign<br>Mangrove Hanging Sign<br>Oak Hanging Sign<br>Pale Oak Hanging Sign<br>Spruce Hanging Sign<br>Warped Hanging Sign": 0,
+            "Acacia Wall Hanging Sign<br>Bamboo Wall Hanging Sign<br>Birch Wall Hanging Sign<br>Cherry Wall Hanging Sign<br>Crimson Wall Hanging Sign<br>Dark Oak Wall Hanging Sign<br>Jungle Wall Hanging Sign<br>Mangrove Wall Hanging Sign<br>Oak Wall Hanging Sign<br>Pale Oak Wall Hanging Sign<br>Spruce Wall Hanging Sign<br>Warped Wall Hanging Sign": 16
+        },
+        "Heads": {
+            "Creeper Head<br>Dragon Head<br>Piglin Head<br>Player Head<br>Skeleton Skull<br>Wither Skeleton Skull<br>Zombie Head": 8,
+            "Creeper Wall Head<br>Dragon Wall Head<br>Piglin Wall Head<br>Player Wall Head<br>Skeleton Wall Skull<br>Wither Skeleton Wall Skull<br>Zombie Wall Head": 12
+        },
+        "Heavy Core": 8,
+        "Honey Block": 15,
+        "Hopper": 16,
+        "Iron Bars": 16,
+        "Lantern": 9,
+        "Lectern": 14,
+        "Lightning Rod": {
+            "facing: down<br>facing: up": 16,
+            "facing: east<br>facing: north<br>facing: south<br>facing: west": 10
+        },
+        "Lily Pad": 1.5,
+        "Moss Carpet": 1,
+        "Mud": 14,
+        "Pale Hanging Moss": "Not Applicable",
+        "Pale Moss Carpet": 1,
+        "Piston": 16,
+        "Pitcher Crop": {
+            "half: lower": {
+                "age: 0": 3,
+                "age: 1<br>age: 2<br>age: 3<br>age: 4": 5
+            },
+            "half: upper": 0
+        },
+        "Pointed Dripstone": 11,
+        "Redstone Comparator": 2,
+        "Redstone Repeater": 2,
+        "Scaffolding": {
+            "Below Spawn": 0,
+            "At Or Above Spawn": 16
+        },
+        "Sculk Sensor": 8,
+        "Sculk Shrieker": 8,
+        "Sea Pickle": {
+            "pickles: 1<br>pickles: 2<br>pickles: 3": 6,
+            "pickles: 4": 7
+        },
+        "Shulker Box": 16,
+        "Slabs": {
+            "type: bottom": 8,
+            "type: double<br>type: top": 16
+        },
+        "Snow": {
+            "layers: 1": 0,
+            "layers: 2": 2,
+            "layers: 3": 4,
+            "layers: 4": 6,
+            "layers: 5": 8,
+            "layers: 6": 10,
+            "layers: 7": 12,
+            "layers: 8": 14
+        },
+        "Soul Sand": 14,
+        "Stairs": 16,
+        "Stonecutter": 9,
+        "Trapped Chest": 14,
+        "Turtle Egg": 7,
+        "Walls": 24
+    }
+}

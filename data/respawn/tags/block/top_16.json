@@ -1,0 +1,24 @@
+{
+    "values": [
+        "#respawn:full_blocks",
+        "#respawn:glass_panes",
+        
+        "#anvil",
+        "#cauldrons",
+        "#doors",
+        "#stairs",
+        "#wall_hanging_signs",
+        
+        "azalea",
+        "bamboo",
+        "composter",
+        "decorated_pot",
+        "dragon_egg",
+        "flowering_azalea",
+        "hopper",
+        "iron_bars",
+        "moving_piston",
+        "piston_head",
+        "sniffer_egg"
+    ]
+}

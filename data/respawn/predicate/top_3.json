@@ -1,0 +1,40 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#trapdoors",
+                    "state": {
+                        "half": "bottom",
+                        "open": "false"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "small_amethyst_bud",
+                    "state": {
+                        "facing": "up"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "pitcher_crop",
+                    "state": {
+                        "half": "lower",
+                        "age": "0"
+                    }
+                }
+            }
+        }
+    ]
+}

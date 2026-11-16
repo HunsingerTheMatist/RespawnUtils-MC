@@ -1,0 +1,165 @@
+{
+    "values": {
+        "Activator Rail": "Not Applicable",
+        "Air": "Not Applicable",
+       "Amethyst Cluster": {
+            "facing: down": {
+                "Amethyst Cluster": 7,
+                "Large Amethyst Bud": 5,
+                "Medium Amethyst Bud": 4,
+                "Small Amethyst Bud": 3
+            },
+            "facing: east<br>facing: north<br>facing: south<br>facing: west": {
+                "Amethyst Cluster": 13,
+                "Large Amethyst Bud": 13,
+                "Medium Amethyst Bud": 13,
+                "Small Amethyst Bud": 12
+            }
+        },
+        "Anvil": 16,
+        "Azalea": 16,
+        "Bamboo": {
+            "Bamboo": 16,
+            "Bamboo Shoot": "Not Applicable"
+        },
+        "Banners": "Not Applicable",
+        "Beds": 13,
+        "Bell": {
+            "attachment: ceiling<br>attachment: double_wall<br>attachment: single_wall": 12,
+            "attachment: floor": 16
+        },
+        "Big Dripleaf": {
+            "Big Dripleaf": {
+                "tilt: full": "Not Applicable",
+                "tilt: none<br>tilt: partial<br>tilt: unstable": 5
+            },
+            "Big Dripleaf Stem": "Not Applicable"
+        },
+        "Bush": "Not Applicable",
+        "Buttons": "Not Applicable",
+        "Cactus Flower": "Not Applicable",
+        "Cauldron": 13,
+        "Cave Vines": "Not Applicable",
+        "Chain": {
+            "axis: x<br>axis: z": 9.5,
+            "axis: y": 16
+        },
+        "Chorus Plant": 13,
+        "Cobweb": "Not Applicable",
+        "Cocoa": {
+            "age: 0": 9,
+            "age: 1": 11,
+            "age: 2": 13
+        },
+        "Conduit": 11,
+        "Coral Fans": "Not Applicable",
+        "Corals": "Not Applicable",
+        "Crops": "Not Applicable",
+        "Dead Bush": "Not Applicable",
+        "Detector Rail": "Not Applicable",
+        "Dry Grass": "Not Applicable",
+        "End Gateway": "Not Applicable",
+        "End Portal": "Not Applicable",
+        "End Rod": {
+            "facing: down<br>facing: up": 16,
+            "facing: east<br>facing: north<br>facing: south<br>facing: west": 10
+        },
+        "Fence Gates": {
+            "open: false": 16,
+            "open: true": "Not Applicable"
+        },
+        "Fern": "Not Applicable",
+        "Fire": "Not Applicable",
+        "Firefly Bush": "Not Applicable",
+        "Flowers": "Not Applicable",
+        "Frogspawn": "Not Applicable",
+        "Fungi": "Not Applicable",
+        "Glow Lichen": "Not Applicable",
+        "Grindstone": {
+            "face: ceiling<br>face: floor": 16,
+            "face: wall": 14
+        },
+        "Hanging Roots": "Not Applicable",
+        "Hanging Signs": {
+            "Acacia Hanging Sign<br>Bamboo Hanging Sign<br>Birch Hanging Sign<br>Cherry Hanging Sign<br>Crimson Hanging Sign<br>Dark Oak Hanging Sign<br>Jungle Hanging Sign<br>Mangrove Hanging Sign<br>Oak Hanging Sign<br>Pale Oak Hanging Sign<br>Spruce Hanging Sign<br>Warped Hanging Sign": "Not Applicable",
+            "Acacia Wall Hanging Sign<br>Bamboo Wall Hanging Sign<br>Birch Wall Hanging Sign<br>Cherry Wall Hanging Sign<br>Crimson Wall Hanging Sign<br>Dark Oak Wall Hanging Sign<br>Jungle Wall Hanging Sign<br>Mangrove Wall Hanging Sign<br>Oak Wall Hanging Sign<br>Pale Oak Wall Hanging Sign<br>Spruce Wall Hanging Sign<br>Warped Wall Hanging Sign": 2
+        },
+        "Heads": {
+            "Creeper Head<br>Dragon Head<br>Piglin Head<br>Player Head<br>Skeleton Skull<br>Wither Skeleton Skull<br>Zombie Head": 16,
+            "Creeper Wall Head<br>Dragon Wall Head<br>Piglin Wall Head<br>Player Wall Head<br>Skeleton Wall Skull<br>Wither Skeleton Wall Skull<br>Zombie Wall Head": 12
+        },
+        "Hopper": {
+            "facing: down": 16,
+            "facing: east<br>facing: north<br>facing: south<br>facing: west": 12
+        },
+        "Kelp": "Not Applicable",
+        "Lantern": 15,
+        "Lava": "Not Applicable",
+        "Leaf Litter": "Not Applicable",
+        "Lectern": 16,
+        "Lever": "Not Applicable",
+        "Light Block": "Not Applicable",
+        "Lightning Rod": {
+            "facing: down<br>facing: up": 16,
+            "facing: east<br>facing: north<br>facing: south<br>facing: west": 10
+        },
+        "Mangrove Propagule": "Not Applicable",
+        "Moving Piston": "Not Applicable",
+        "Mushrooms": "Not Applicable",
+        "Nether Portal": "Not Applicable",
+        "Nether Sprouts": "Not Applicable",
+        "Nether Wart": "Not Applicable",
+        "Pale Hanging Moss": "Not Applicable",
+        "Pale Moss Carpet": 16,
+        "Pink Petals": "Not Applicable",
+        "Piston": 16,
+        "Pitcher Crop": "Not Applicable",
+        "Pitcher Plant": "Not Applicable",
+        "Pointed Dripstone": 11,
+        "Powder Snow": "Not Applicable",
+        "Powered Rail": "Not Applicable",
+        "Pressure Plates": "Not Applicable",
+        "Rail": "Not Applicable",
+        "Redstone Dust": "Not Applicable",
+        "Redstone Torch": "Not Applicable",
+        "Resin Clump": "Not Applicable",
+        "Roots": "Not Applicable",
+        "Saplings": "Not Applicable",
+        "Scaffolding": 2,
+        "Sculk Vein": "Not Applicable",
+        "Seagrass": "Not Applicable",
+        "Short Grass": "Not Applicable",
+        "Shulker Box": 16,
+        "Signs": "Not Applicable",
+        "Slabs": {
+            "type: bottom<br>type: double": 16,
+            "type: top": 8
+        },
+        "Small Dripleaf": "Not Applicable",
+        "Snow": 16,
+        "Spore Blossom": "Not Applicable",
+        "Stairs": 16,
+        "Structure Void": "Not Applicable",
+        "Sugar Cane": "Not Applicable",
+        "Sweet Berry Bush": "Not Applicable",
+        "Tall Grass": "Not Applicable",
+        "Torch": "Not Applicable",
+        "Torchflower": "Not Applicable",
+        "Torchflower Crop": "Not Applicable",
+        "Trapdoors": {
+            "open: false": {
+                "half: bottom": 16,
+                "half: top": 3
+            },
+            "open: true": "Not Applicable"
+        },
+        "Tripwire": "Not Applicable",
+        "Tripwire Hook": "Not Applicable",
+        "Twisting Vines": "Not Applicable",
+        "Vines": "Not Applicable",
+        "Walls": 16,
+        "Water": "Not Applicable",
+        "Weeping Vines": "Not Applicable",
+        "Wildflowers": "Not Applicable"
+    }
+}

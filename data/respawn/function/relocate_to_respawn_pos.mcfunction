@@ -1,0 +1,1 @@
+$execute in $(dimension) positioned $(x) $(y) $(z) run return run function respawn:search/search_for_valid_respawn with storage respawn:macro respawn

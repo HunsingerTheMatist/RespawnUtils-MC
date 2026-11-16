@@ -1,0 +1,1 @@
+execute as @e[type=marker,tag=respawn.forceload] run function respawn:forceloads/remove

@@ -1,0 +1,225 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#fence_gates",
+                    "state": {
+                        "open": "false"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "blocks": "#slabs"
+                        }
+                    }
+                },
+                {
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "state": {
+                                    "type": "top"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#trapdoors",
+                    "state": {
+                        "half": "bottom",
+                        "open": "false"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "small_amethyst_bud",
+                    "state": {
+                        "facing": "up"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "bell",
+                    "state": {
+                        "attachment": "floor"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "blocks": "cake"
+                        }
+                    }
+                },
+                {
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "state": {
+                                    "bites": "6"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "chain",
+                    "state": {
+                        "axis": "y"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "blocks": ["end_rod", "lightning_rod"]
+                        }
+                    }
+                },
+                {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "location_check",
+                            "predicate": {
+                                "block": {
+                                    "state": {
+                                        "facing": "down"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": "location_check",
+                            "predicate": {
+                                "block": {
+                                    "state": {
+                                        "facing": "up"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "blocks": "grindstone"
+                        }
+                    }
+                },
+                {
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "state": {
+                                    "face": "wall"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "hopper",
+                    "state": {
+                        "facing": "down"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "pitcher_crop",
+                    "state": {
+                        "half": "lower"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "blocks": "snow"
+                        }
+                    }
+                },
+                {
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "state": {
+                                    "layers": "1"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

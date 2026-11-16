@@ -1,0 +1,110 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#fence_gates",
+                    "state": {
+                        "open": "true"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#trapdoors",
+                    "state": {
+                        "open": "true"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "blocks": "small_amethyst_bud"
+                        }
+                    }
+                },
+                {
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "state": {
+                                    "facing": "down"
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "state": {
+                                    "facing": "up"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "big_dripleaf",
+                    "state": {
+                        "tilt": "full"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "cake",
+                    "state": {
+                        "bites": "6"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "pitcher_crop",
+                    "state": {
+                        "half": "upper"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "snow",
+                    "state": {
+                        "layers": "1"
+                    }
+                }
+            }
+        }
+    ]
+}

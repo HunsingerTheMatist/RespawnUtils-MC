@@ -1,0 +1,45 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "large_amethyst_bud",
+                    "state": {
+                        "facing": "up"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "blocks": "pitcher_crop",
+                            "state": {
+                                "half": "lower"
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "state": {
+                                    "age": "0"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

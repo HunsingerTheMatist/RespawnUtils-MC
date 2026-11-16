@@ -1,0 +1,3 @@
+execute if score @s respawn.type matches 1 run return run scoreboard players display numberformat @s respawn.type fixed {text:"Forced", color:"blue"}
+execute if score @s respawn.type matches 2 run return run scoreboard players display numberformat @s respawn.type fixed {text:"Bed", color:"blue"}
+execute if score @s respawn.type matches 3 run return run scoreboard players display numberformat @s respawn.type fixed {text:"Anchor", color:"blue"}

@@ -1,0 +1,39 @@
+{
+    "values": [
+        "#respawn:bottom_0",
+
+        "#candles",
+        "#flower_pots",
+        "#saplings",
+        "#wall_hanging_signs",
+        "#wool_carpets",
+
+        "big_dripleaf",
+        "chorus_flower",
+        "chorus_plant",
+        "cocoa",
+        "creeper_head",
+        "creeper_wall_head",
+        "dragon_head",
+        "dragon_wall_head",
+        "end_rod",
+        "heavy_core",
+        "lily_pad",
+        "moss_carpet",
+        "pale_moss_carpet",
+        "piglin_head",
+        "piglin_wall_head",
+        "pitcher_crop",
+        "player_head",
+        "player_wall_head",
+        "scaffolding",
+        "sea_pickle",
+        "skeleton_skull",
+        "skeleton_wall_skull",
+        "snow",
+        "wither_skeleton_skull",
+        "wither_skeleton_wall_skull",
+        "zombie_head",
+        "zombie_wall_head"
+    ]
+}

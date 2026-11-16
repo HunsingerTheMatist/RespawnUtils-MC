@@ -1,0 +1,42 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "large_amethyst_bud",
+                    "state": {
+                        "facing": "down"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "blocks": "big_dripleaf"
+                        }
+                    }
+                },
+                {
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "state": {
+                                    "tilt": "full"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

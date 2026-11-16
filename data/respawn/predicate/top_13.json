@@ -1,0 +1,53 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "blocks": ["amethyst_cluster", "large_amethyst_bud", "medium_amethyst_bud"]
+                        }
+                    }
+                },
+                {
+                    "condition": "inverted",
+                    "term": {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "state": {
+                                    "facing": "up"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "big_dripleaf",
+                    "state": {
+                        "tilt": "partial"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "end_portal_frame",
+                    "state": {
+                        "eye": "false"
+                    }
+                }
+            }
+        }
+    ]
+}
