@@ -1,14 +1,15 @@
 """
 Builds the distributable Respawn Utils zip into builds/:
-  RespawnUtils-v<version>-mc<MC version>-build<n>.zip
+  RespawnUtils-v<version>-mc<MC versions>-build<n>.zip
 where:
   - version is parsed from load.mcfunction's `Version` setter and stripped to
     its first contiguous numeric+dot run (e.g. 'beta 1.0' -> '1.0').
-  - MC version is resolved offline from pack.mcmeta via
-    _pack_meta.resolve_target_mc_version (refresh the lookup with
-    fetch_pack_format_versions.py). Year-based ids like '26.2.1' are trimmed to
-    major.minor; legacy '1.x.y' ids are kept whole, since every 1.21.x release
-    has its own pack format.
+  - MC versions is the supported range, earliest to latest (e.g.
+    '1.21.6-1.21.8'), or a single version when both ends match. It is resolved
+    offline from pack.mcmeta via _pack_meta.resolve_supported_mc_versions
+    (refresh the lookup with fetch_pack_format_versions.py). Year-based ids like
+    '26.2.1' are trimmed to major.minor; legacy '1.x.y' ids are kept whole,
+    since 1.21.x patch releases often have different pack formats.
   - build # is tracked in build_info.json: increments on each run while the
     version is unchanged, resets to 1 when the version changes.
 """
@@ -19,7 +20,7 @@ import sys
 from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
 
-from _pack_meta import resolve_target_mc_version
+from _pack_meta import resolve_supported_mc_versions
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 ROOT = SCRIPT_DIR.parent  # repo root (one level up from tools/)
@@ -124,7 +125,8 @@ def main() -> None:
     args = parser.parse_args()
 
     version = parse_version()
-    mc_version = short_mc_version(resolve_target_mc_version(ROOT))
+    first, last = (short_mc_version(v) for v in resolve_supported_mc_versions(ROOT))
+    mc_version = first if first == last else f"{first}-{last}"
     build = update_build_info(version)
 
     BUILDS_DIR.mkdir(exist_ok=True)

@@ -1,6 +1,7 @@
 {
     "pack": {
         "pack_format": 80,
+        "supported_formats": [80, 81],
         "description": "Respawn Utils - Minecraft datapack that provides visuals and scoreboard values for player respawn points and whether they are valid or not"
     }
 }
