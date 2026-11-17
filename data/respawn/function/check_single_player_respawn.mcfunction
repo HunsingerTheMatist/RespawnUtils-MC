@@ -13,7 +13,7 @@ data modify storage respawn:macro respawn.z set from storage respawn:macro respa
 execute unless data storage respawn:macro respawn.dimension run data modify storage respawn:macro respawn.dimension set value "minecraft:overworld"
 
 execute store success score #tmp respawn.utils run function respawn:relocate_to_respawn_pos with storage respawn:macro respawn
-execute unless score #do_respawn_type_checks respawn.type matches 0 run function respawn:update_respawn_type_text
+execute unless score #do_respawn_type_checks respawn.utils matches 0 run function respawn:update_respawn_type_text
 execute unless score #do_respawn_valid_checks respawn.utils matches 0 run scoreboard players operation @s respawn.valid = #tmp respawn.utils
 
 return 1

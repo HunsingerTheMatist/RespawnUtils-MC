@@ -9,49 +9,49 @@ execute if block ~ ~ ~ #respawn:bottom_16 run return fail
 execute if predicate respawn:bottom_16 run return fail
 
 # Exit early if the player wouldn't be able to fit under any future blocks
-execute if score #respawn.max_bottom tmp matches ..19 run return fail
+execute if score #max_bottom respawn.utils matches ..19 run return fail
 execute if block ~ ~ ~ #respawn:bottom_2 run return 1
 
-execute if score #respawn.max_bottom tmp matches ..29 run return fail
+execute if score #max_bottom respawn.utils matches ..29 run return fail
 execute if predicate respawn:bottom_3 run return 1
 
-execute if score #respawn.max_bottom tmp matches ..39 run return fail
+execute if score #max_bottom respawn.utils matches ..39 run return fail
 execute if predicate respawn:bottom_4 run return 1
 
-execute if score #respawn.max_bottom tmp matches ..49 run return fail
+execute if score #max_bottom respawn.utils matches ..49 run return fail
 execute if predicate respawn:bottom_5 run return 1
 
-execute if score #respawn.max_bottom tmp matches ..69 run return fail
+execute if score #max_bottom respawn.utils matches ..69 run return fail
 execute if predicate respawn:bottom_7 run return 1
 
-execute if score #respawn.max_bottom tmp matches ..79 run return fail
+execute if score #max_bottom respawn.utils matches ..79 run return fail
 execute if predicate respawn:bottom_8 run return 1
 
-execute if score #respawn.max_bottom tmp matches ..89 run return fail
+execute if score #max_bottom respawn.utils matches ..89 run return fail
 execute if predicate respawn:bottom_9 run return 1
 
-execute if score #respawn.max_bottom tmp matches ..94 run return fail
+execute if score #max_bottom respawn.utils matches ..94 run return fail
 execute if predicate respawn:bottom_9.5 run return 1
 
-execute if score #respawn.max_bottom tmp matches ..99 run return fail
+execute if score #max_bottom respawn.utils matches ..99 run return fail
 execute if predicate respawn:bottom_10 run return 1
 
-execute if score #respawn.max_bottom tmp matches ..109 run return fail
+execute if score #max_bottom respawn.utils matches ..109 run return fail
 execute if block ~ ~ ~ #respawn:bottom_11 run return 1
 execute if predicate respawn:bottom_11 run return 1
 
-execute if score #respawn.max_bottom tmp matches ..119 run return fail
+execute if score #max_bottom respawn.utils matches ..119 run return fail
 execute if block ~ ~ ~ #respawn:bottom_12 run return 1
 execute if predicate respawn:bottom_12 run return 1
 
-execute if score #respawn.max_bottom tmp matches ..129 run return fail
+execute if score #max_bottom respawn.utils matches ..129 run return fail
 execute if block ~ ~ ~ #respawn:bottom_13 run return 1
 execute if predicate respawn:bottom_13 run return 1
 
-execute if score #respawn.max_bottom tmp matches ..139 run return fail
+execute if score #max_bottom respawn.utils matches ..139 run return fail
 execute if predicate respawn:bottom_14 run return 1
 
-execute if score #respawn.max_bottom tmp matches ..149 run return fail
+execute if score #max_bottom respawn.utils matches ..149 run return fail
 execute if block ~ ~ ~ #respawn:bottom_15 run return 1
 
 # Stuff for debug purposes

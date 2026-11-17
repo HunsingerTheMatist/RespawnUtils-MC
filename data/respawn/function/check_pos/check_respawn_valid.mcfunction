@@ -19,23 +19,23 @@ execute if block ~ ~ ~ #invalid_spawn_inside run return fail
 execute if block ~ ~1 ~ #invalid_spawn_inside run return fail
 
 # Check the current block or the block below for a valid top surface to spawn on
-scoreboard players set #respawn.height tmp -1
+scoreboard players set #height respawn.utils -1
 execute positioned ~ ~-1 ~ run function respawn:check_pos/check_below_spawn
 execute positioned ~ ~ ~ run function respawn:check_pos/check_at_spawn
 
 # Failed to find a valid top surface to spawn on
-execute if score #respawn.height tmp matches -1 run return fail
+execute if score #height respawn.utils matches -1 run return fail
 
 # Add player height to top surface, subtract the height of a block, and then subtract that from the height of a block
 #  to obtain the maximum allowed 'bottom' collision value for the block above
 # Equation: max_bottom = 160 - (288 + height - 160) -> max_bottom = 32 - height
-scoreboard players set #respawn.max_bottom tmp 32
-scoreboard players operation #respawn.max_bottom tmp -= #respawn.height tmp
+scoreboard players set #max_bottom respawn.utils 32
+scoreboard players operation #max_bottom respawn.utils -= #height respawn.utils
 
 # Check block above to see if the player can fit
 execute positioned ~ ~1 ~ unless function respawn:check_pos/check_above_spawn run return fail
 
 # If necessary, check block 2 above to see if the player can fit
-execute unless score #respawn.max_bottom tmp matches ..-1 run return 1
-scoreboard players add #respawn.max_bottom tmp 160
+execute unless score #max_bottom respawn.utils matches ..-1 run return 1
+scoreboard players add #max_bottom respawn.utils 160
 execute positioned ~ ~2 ~ run return run function respawn:check_pos/check_above_spawn
