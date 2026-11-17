@@ -14,13 +14,17 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).resolve().parent
 VERSIONS_FILE = SCRIPT_DIR / "pack_format_versions.json"
 
+# Stand-in for "every minor" when a range's high end gives only a major
+ANY_MINOR = 2**31 - 1
 
-def _parse_format(fmt) -> tuple[int, int]:
-    """Turns an int or a `[major, minor]` list into `(major, minor)`, with minor
-    defaulting to 0."""
+
+def _parse_format(fmt, default_minor: int) -> tuple[int, int]:
+    """Turns an int or a `[major, minor]` list into `(major, minor)`. A bare major
+    takes `default_minor`, matching the game: 0 for the low end of a range, and
+    every minor (e.g. '94' meaning 94.*) for the high end."""
     if isinstance(fmt, list):
-        return int(fmt[0]), int(fmt[1]) if len(fmt) > 1 else 0
-    return int(fmt), 0
+        return int(fmt[0]), int(fmt[1]) if len(fmt) > 1 else default_minor
+    return int(fmt), default_minor
 
 
 def read_pack_format_range(root: Path) -> tuple[tuple[int, int], tuple[int, int]]:
@@ -49,7 +53,7 @@ def read_pack_format_range(root: Path) -> tuple[tuple[int, int], tuple[int, int]
     if low is None or high is None:
         sys.exit("pack.mcmeta declares no pack format (min_format/max_format, "
                  "supported_formats or pack_format).")
-    return _parse_format(low), _parse_format(high)
+    return _parse_format(low, 0), _parse_format(high, ANY_MINOR)
 
 
 def _lookup(versions: dict, fmt: tuple[int, int], end: str) -> str:
