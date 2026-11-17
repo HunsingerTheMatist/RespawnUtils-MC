@@ -1,5 +1,5 @@
 {
     "values": [
-        "dried_ghast"
+        {"id": "dried_ghast", "required": false}
     ]
 }
