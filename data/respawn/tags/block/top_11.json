@@ -1,6 +1,8 @@
 {
     "values": [
         "conduit",
-        "pointed_dripstone"
+        "pointed_dripstone",
+
+        {"id": "sulfur_spike", "required": false}
     ]
 }
