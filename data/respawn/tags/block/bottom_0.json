@@ -112,6 +112,9 @@
         "weeping_vines",
         "weeping_vines_plant",
         "wheat",
-        "wildflowers"
+        "wildflowers",
+
+        {"id": "copper_torch", "required": false},
+        {"id": "copper_wall_torch", "required": false}
     ]
 }

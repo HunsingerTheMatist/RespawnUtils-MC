@@ -34,6 +34,8 @@
         "wither_skeleton_skull",
         "wither_skeleton_wall_skull",
         "zombie_head",
-        "zombie_wall_head"
+        "zombie_wall_head",
+
+        {"id": "#copper_golem_statues", "required": false}
     ]
 }

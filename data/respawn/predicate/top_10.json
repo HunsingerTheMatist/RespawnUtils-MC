@@ -8,7 +8,7 @@
                     "condition": "location_check",
                     "predicate": {
                         "block": {
-                            "blocks": ["end_rod", "lightning_rod"]
+                            "blocks": "#respawn:rods"
                         }
                     }
                 },

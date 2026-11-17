@@ -19,6 +19,9 @@
         "iron_bars",
         "moving_piston",
         "piston_head",
-        "sniffer_egg"
+        "sniffer_egg",
+
+        {"id": "#bars", "required": false},
+        {"id": "#wooden_shelves", "required": false}
     ]
 }

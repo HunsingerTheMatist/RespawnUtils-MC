@@ -102,7 +102,7 @@
             "condition": "location_check",
             "predicate": {
                 "block": {
-                    "blocks": "chain",
+                    "blocks": "#respawn:chains",
                     "state": {
                         "axis": "y"
                     }
@@ -116,7 +116,7 @@
                     "condition": "location_check",
                     "predicate": {
                         "block": {
-                            "blocks": ["end_rod", "lightning_rod"]
+                            "blocks": "#respawn:rods"
                         }
                     }
                 },

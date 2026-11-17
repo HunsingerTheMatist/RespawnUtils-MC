@@ -8,6 +8,9 @@
         "lectern",
         "mud",
         "soul_sand",
-        "trapped_chest"
+        "trapped_chest",
+
+        {"id": "#copper_chests", "required": false},
+        {"id": "#copper_golem_statues", "required": false}
     ]
 }

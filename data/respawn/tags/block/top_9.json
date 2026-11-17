@@ -4,6 +4,8 @@
         
         "lantern",
         "soul_lantern",
-        "stonecutter"
+        "stonecutter",
+
+        {"id": "#lanterns", "required": false}
     ]
 }

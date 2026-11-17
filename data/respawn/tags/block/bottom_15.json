@@ -1,6 +1,8 @@
 {
     "values": [
         "lantern",
-        "soul_lantern"
+        "soul_lantern",
+
+        {"id": "#lanterns", "required": false}
     ]
 }

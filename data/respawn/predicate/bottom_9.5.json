@@ -8,7 +8,7 @@
                     "condition": "location_check",
                     "predicate": {
                         "block": {
-                            "blocks": "chain"
+                            "blocks": "#respawn:chains"
                         }
                     }
                 },

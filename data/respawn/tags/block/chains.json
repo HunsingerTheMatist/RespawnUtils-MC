@@ -1,0 +1,6 @@
+{
+    "values": [
+        {"id": "chain", "required": false},
+        {"id": "#chains", "required": false}
+    ]
+}

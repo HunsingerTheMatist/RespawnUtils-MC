@@ -56,6 +56,11 @@
         "trapped_chest",
         "turtle_egg",
         "wither_skeleton_skull",
-        "zombie_head"
+        "zombie_head",
+
+        {"id": "#bars", "required": false},
+        {"id": "#copper_chests", "required": false},
+        {"id": "#copper_golem_statues", "required": false},
+        {"id": "#wooden_shelves", "required": false}
     ]
 }
