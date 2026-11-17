@@ -115,6 +115,8 @@
         "wildflowers",
 
         {"id": "copper_torch", "required": false},
-        {"id": "copper_wall_torch", "required": false}
+        {"id": "copper_wall_torch", "required": false},
+        {"id": "poplar_sapling", "required": false},
+        {"id": "red_shrub", "required": false}
     ]
 }

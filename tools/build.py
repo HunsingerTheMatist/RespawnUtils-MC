@@ -12,6 +12,10 @@ where:
     since 1.21.x patch releases often have different pack formats.
   - build # is tracked in build_info.json: increments on each run while the
     version is unchanged, resets to 1 when the version changes.
+
+Predicates are written with the 26.3+ `"type"` condition key. The build adds a
+copy of each one using the older `"condition"` key under the CONDITION_KEY_OVERLAY
+directory, which pack.mcmeta applies for formats 71-120 (MC 1.21.5-26.2).
 """
 import argparse
 import json
@@ -28,6 +32,20 @@ BUILD_INFO_FILE = SCRIPT_DIR / "build_info.json"
 BUILDS_DIR = ROOT / "builds"
 
 LOAD_MCFUNCTION = ROOT / "data" / "respawn" / "function" / "load.mcfunction"
+PREDICATE_DIR = ROOT / "data" / "respawn" / "predicate"
+
+# Overlay directory holding the generated `"condition"` key predicates. Must
+#  match the overlay entry's "directory" in pack.mcmeta
+CONDITION_KEY_OVERLAY = "condition_key"
+
+# Condition types the key conversion can walk, and the fields holding their
+#  nested conditions
+CONDITION_CHILDREN = {
+    "any_of": "terms",
+    "all_of": "terms",
+    "inverted": "term",
+    "location_check": None,
+}
 
 # Repo-root entries that make up the pack. Folders are walked recursively.
 #  Anything not listed here is excluded from the build
@@ -104,18 +122,65 @@ def collect_files() -> dict:
     return files
 
 
+def to_condition_key(cond: dict, source: str) -> dict:
+    """Returns a copy of a `"type"` key condition using the `"condition"` key,
+    converting its nested conditions too. Other keys are copied unchanged, so a
+    block state such as a slab's `"type": "top"` is left alone. Errors out on a
+    condition without a `"type"` key or of a type CONDITION_CHILDREN lacks."""
+    if "type" not in cond:
+        sys.exit(f"{source}: condition without a \"type\" key: {json.dumps(cond)[:80]}")
+    kind = cond["type"].removeprefix("minecraft:")
+    if kind not in CONDITION_CHILDREN:
+        sys.exit(f"{source}: condition type {cond['type']!r} needs adding to CONDITION_CHILDREN.")
+    children = CONDITION_CHILDREN[kind]
+    out = {}
+    for key, value in cond.items():
+        if key == "type":
+            out["condition"] = value
+        elif key == children == "terms":
+            out[key] = [to_condition_key(c, source) for c in value]
+        elif key == children == "term":
+            out[key] = to_condition_key(value, source)
+        else:
+            out[key] = value
+    return out
+
+
+def condition_key_overlay() -> dict:
+    """Generates the CONDITION_KEY_OVERLAY copy of every predicate as {path in the
+    zip: bytes}. Errors out if pack.mcmeta has no overlay entry for that
+    directory."""
+    meta = json.loads((ROOT / "pack.mcmeta").read_text(encoding="utf-8"))
+    dirs = [e.get("directory") for e in meta.get("overlays", {}).get("entries", [])]
+    if CONDITION_KEY_OVERLAY not in dirs:
+        sys.exit(f"pack.mcmeta has no overlay entry for directory {CONDITION_KEY_OVERLAY!r}.")
+    files = {}
+    for src in sorted(PREDICATE_DIR.glob("*.json")):
+        rel = src.relative_to(ROOT).as_posix()
+        converted = to_condition_key(json.loads(src.read_text(encoding="utf-8")), rel)
+        text = json.dumps(converted, indent=4) + "\n"
+        files[f"{CONDITION_KEY_OVERLAY}/{rel}"] = text.replace("\n", "\r\n").encode("utf-8")
+    return files
+
+
 def build_pack(zip_path: Path, verbose: bool) -> int:
-    """Zips the files 'collect_files' gathers. Returns the file count."""
+    """Zips the files 'collect_files' gathers plus the generated
+    'condition_key_overlay' files. Returns the file count."""
     if zip_path.exists():
         zip_path.unlink()
 
     files = collect_files()
+    generated = condition_key_overlay()
     with ZipFile(zip_path, "w", ZIP_DEFLATED) as zf:
         for rel, src in files.items():
             zf.write(src, rel)
             if verbose:
                 print(f"  {rel}")
-    return len(files)
+        for rel, data in generated.items():
+            zf.writestr(rel, data)
+            if verbose:
+                print(f"  {rel} (generated)")
+    return len(files) + len(generated)
 
 
 def main() -> None:

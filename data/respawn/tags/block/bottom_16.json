@@ -61,6 +61,7 @@
         {"id": "#bars", "required": false},
         {"id": "#copper_chests", "required": false},
         {"id": "#copper_golem_statues", "required": false},
-        {"id": "#wooden_shelves", "required": false}
+        {"id": "#wooden_shelves", "required": false},
+        {"id": "straw_bed", "required": false}
     ]
 }

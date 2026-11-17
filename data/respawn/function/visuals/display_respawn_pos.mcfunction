@@ -1,2 +1,3 @@
 execute as @n[type=block_display,tag=respawn_visual,distance=..0.25] run return run tag @s add respawn_processed
-summon block_display ~-0.164 ~ ~-0.164 {block_state: {Name: "blue_stained_glass"}, glow_color_override: 1185513, brightness: {block: 15,sky: 15}, Glowing: true, transformation: {left_rotation: [0,0,0,1], right_rotation: [0,0,0,1], scale: [0.328, 0.33, 0.328], translation: [0,0,0]}, Tags: ["respawn_visual","respawn_processed"]}
+# The block state has both keys so every version reads it: `Name` up to 26.2, `id` from 26.3
+summon block_display ~-0.164 ~ ~-0.164 {block_state: {Name: "blue_stained_glass", id: "blue_stained_glass"}, glow_color_override: 1185513, brightness: {block: 15,sky: 15}, Glowing: true, transformation: {left_rotation: [0,0,0,1], right_rotation: [0,0,0,1], scale: [0.328, 0.33, 0.328], translation: [0,0,0]}, Tags: ["respawn_visual","respawn_processed"]}

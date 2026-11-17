@@ -1,8 +1,8 @@
 {
-    "condition": "any_of",
+    "type": "any_of",
     "terms": [
         {
-            "condition": "location_check",
+            "type": "location_check",
             "predicate": {
                 "block": {
                     "blocks": "#fence_gates",
@@ -13,7 +13,7 @@
             }
         },
         {
-            "condition": "location_check",
+            "type": "location_check",
             "predicate": {
                 "block": {
                     "blocks": "#trapdoors",
@@ -24,10 +24,10 @@
             }
         },
         {
-            "condition": "all_of",
+            "type": "all_of",
             "terms": [
                 {
-                    "condition": "location_check",
+                    "type": "location_check",
                     "predicate": {
                         "block": {
                             "blocks": "small_amethyst_bud"
@@ -35,9 +35,9 @@
                     }
                 },
                 {
-                    "condition": "inverted",
+                    "type": "inverted",
                     "term": {
-                        "condition": "location_check",
+                        "type": "location_check",
                         "predicate": {
                             "block": {
                                 "state": {
@@ -48,9 +48,9 @@
                     }
                 },
                 {
-                    "condition": "inverted",
+                    "type": "inverted",
                     "term": {
-                        "condition": "location_check",
+                        "type": "location_check",
                         "predicate": {
                             "block": {
                                 "state": {
@@ -63,7 +63,7 @@
             ]
         },
         {
-            "condition": "location_check",
+            "type": "location_check",
             "predicate": {
                 "block": {
                     "blocks": "big_dripleaf",
@@ -74,7 +74,7 @@
             }
         },
         {
-            "condition": "location_check",
+            "type": "location_check",
             "predicate": {
                 "block": {
                     "blocks": "cake",
@@ -85,7 +85,7 @@
             }
         },
         {
-            "condition": "location_check",
+            "type": "location_check",
             "predicate": {
                 "block": {
                     "blocks": "pitcher_crop",
@@ -96,7 +96,7 @@
             }
         },
         {
-            "condition": "location_check",
+            "type": "location_check",
             "predicate": {
                 "block": {
                     "blocks": "snow",

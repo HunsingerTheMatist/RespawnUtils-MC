@@ -3,6 +3,7 @@
         "conduit",
         "pointed_dripstone",
 
-        {"id": "sulfur_spike", "required": false}
+        {"id": "sulfur_spike", "required": false},
+        {"id": "shelf_mushroom", "required": false}
     ]
 }

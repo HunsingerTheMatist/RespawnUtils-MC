@@ -36,6 +36,7 @@
         "zombie_head",
         "zombie_wall_head",
 
-        {"id": "#copper_golem_statues", "required": false}
+        {"id": "#copper_golem_statues", "required": false},
+        {"id": "shelf_mushroom", "required": false}
     ]
 }

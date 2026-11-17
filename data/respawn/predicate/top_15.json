@@ -1,11 +1,11 @@
 {
-    "condition": "any_of",
+    "type": "any_of",
     "terms": [
         {
-            "condition": "all_of",
+            "type": "all_of",
             "terms": [
                 {
-                    "condition": "location_check",
+                    "type": "location_check",
                     "predicate": {
                         "block": {
                             "blocks": "bell"
@@ -13,10 +13,10 @@
                     }
                 },
                 {
-                    "condition": "any_of",
+                    "type": "any_of",
                     "terms": [
                         {
-                            "condition": "location_check",
+                            "type": "location_check",
                             "predicate": {
                                 "block": {
                                     "state": {
@@ -26,7 +26,7 @@
                             }
                         },
                         {
-                            "condition": "location_check",
+                            "type": "location_check",
                             "predicate": {
                                 "block": {
                                     "state": {
@@ -40,10 +40,10 @@
             ]
         },
         {
-            "condition": "all_of",
+            "type": "all_of",
             "terms": [
                 {
-                    "condition": "location_check",
+                    "type": "location_check",
                     "predicate": {
                         "block": {
                             "blocks": "big_dripleaf"
@@ -51,10 +51,10 @@
                     }
                 },
                 {
-                    "condition": "any_of",
+                    "type": "any_of",
                     "terms": [
                         {
-                            "condition": "location_check",
+                            "type": "location_check",
                             "predicate": {
                                 "block": {
                                     "state": {
@@ -64,7 +64,7 @@
                             }
                         },
                         {
-                            "condition": "location_check",
+                            "type": "location_check",
                             "predicate": {
                                 "block": {
                                     "state": {

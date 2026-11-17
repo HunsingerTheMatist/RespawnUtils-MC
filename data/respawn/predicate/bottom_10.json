@@ -1,11 +1,11 @@
 {
-    "condition": "any_of",
+    "type": "any_of",
     "terms": [
         {
-            "condition": "all_of",
+            "type": "all_of",
             "terms": [
                 {
-                    "condition": "location_check",
+                    "type": "location_check",
                     "predicate": {
                         "block": {
                             "blocks": "#respawn:rods"
@@ -13,9 +13,9 @@
                     }
                 },
                 {
-                    "condition": "inverted",
+                    "type": "inverted",
                     "term": {
-                        "condition": "location_check",
+                        "type": "location_check",
                         "predicate": {
                             "block": {
                                 "state": {
@@ -26,9 +26,9 @@
                     }
                 },
                 {
-                    "condition": "inverted",
+                    "type": "inverted",
                     "term": {
-                        "condition": "location_check",
+                        "type": "location_check",
                         "predicate": {
                             "block": {
                                 "state": {
@@ -39,6 +39,17 @@
                     }
                 }
             ]
+        },
+        {
+            "type": "location_check",
+            "predicate": {
+                "block": {
+                    "blocks": "#respawn:shelf_mushroom",
+                    "state": {
+                        "age": "1"
+                    }
+                }
+            }
         }
     ]
 }
