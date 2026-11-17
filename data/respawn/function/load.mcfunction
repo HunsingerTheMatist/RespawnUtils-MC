@@ -16,10 +16,9 @@ scoreboard players add #do_respawn_type_checks respawn.utils 0
 execute unless score #show_respawn_visuals respawn.utils matches 0.. run scoreboard players set #show_respawn_visuals respawn.utils 1
 execute unless score #check_valid_forced_spawn respawn.utils matches 0.. run scoreboard players set #check_valid_forced_spawn respawn.utils 1
 
-execute unless entity c7475e5a-8dc0-45be-bdf0-fce9868902e3 run summon marker 0 0 0 {UUID:[I;-951624102,-1916779074,-1108280087,-2037841181], Tags:["respawn_scoreboard"]}
-scoreboard players display name c7475e5a-8dc0-45be-bdf0-fce9868902e3 respawn.exists {text: "STATUS:", color:"yellow"}
-scoreboard players display name c7475e5a-8dc0-45be-bdf0-fce9868902e3 respawn.valid {text: "STATUS:", color:"yellow"}
-scoreboard players display name c7475e5a-8dc0-45be-bdf0-fce9868902e3 respawn.type {text: "STATUS:", color:"yellow"}
-scoreboard players set c7475e5a-8dc0-45be-bdf0-fce9868902e3 respawn.exists 1000
-scoreboard players set c7475e5a-8dc0-45be-bdf0-fce9868902e3 respawn.valid 1000
-scoreboard players set c7475e5a-8dc0-45be-bdf0-fce9868902e3 respawn.type 1000
+scoreboard players display name respawn.status respawn.exists {text: "STATUS:", color:"yellow"}
+scoreboard players display name respawn.status respawn.valid {text: "STATUS:", color:"yellow"}
+scoreboard players display name respawn.status respawn.type {text: "STATUS:", color:"yellow"}
+scoreboard players set respawn.status respawn.exists 1000
+scoreboard players set respawn.status respawn.valid 1000
+scoreboard players set respawn.status respawn.type 1000
